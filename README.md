@@ -22,9 +22,11 @@ Repositório referente ao projeto de Infraestrutura de Redes do 4° bimestre.
 ## Gateway Server
 Implementação do Gateway Server.
 
-[Acessar o documento com os arquivos](https://docs.google.com/document/d/1Xv7Ty3lvC3-qNTQt25EnL8IpG_NvVQZun_OtiMyuOXU/edit?usp=sharing)
-
-## Arquivos de imagem
+- [Acessar o documento com os arquivos](https://docs.google.com/document/d/1Xv7Ty3lvC3-qNTQt25EnL8IpG_NvVQZun_OtiMyuOXU/edit?usp=sharing)
+- [Arquivos de imagem]()
 
 ## Samba
 Implementação do Samba
+
+- []()
+- []()
