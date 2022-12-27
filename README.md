@@ -4,7 +4,7 @@
 
 **Instituto Federal de Alagoas - Campus Arapiraca**
 
-**Integrantes:** [Julia Vitória Farias da Silva](https://github.com/juliavitoriav), [Macielly da Trindade Almeida](https://github.com/Maahrcy), [Maria Catielly dos Santos Silva](https://github.com/Mcatielly) e [Nivea Stella]()
+**Integrantes:** [Julia Vitória Farias da Silva](https://github.com/juliavitoriav), [Macielly da Trindade Almeida](https://github.com/Maahrcy), [Maria Catielly dos Santos Silva](https://github.com/Mcatielly) e [Nivea Stella de Oliveira Nunes]()
 
 **Professor:** [Alaelson](https://github.com/alaelson/)
 
@@ -18,6 +18,20 @@
 
 # Grupo5.923.Redes
 Repositório referente ao projeto de Infraestrutura de Redes do 4° bimestre.
+
+### Integrantes
+- Julia Vitória Farias da Silva
+- Macielly da Trindade Almeida
+- Maria Catielly dos Santos Silva
+- Nivea Stella de Oliveira Nunes
+
+### Subrede 192.168.23.64/28
+- IP da Subrede: **192.168.23.64**
+- IP de Broadcast: **192.168.23.79**
+- IP de GW: **192.168.23.70**
+- IP de SAMBA: **192.168.23.71**
+- IP de NS1: **192.168.23.72**
+- IP de NS2: **192.168.23.73**
 
 ## Tabelas
 | DESCRIÇÃO  |  IP  |  hostname  |  FQDN  |  aliase  |
