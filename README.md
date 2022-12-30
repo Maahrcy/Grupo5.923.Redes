@@ -47,7 +47,7 @@ Repositório referente ao projeto de Infraestrutura de Redes do 4° bimestre.
 Implementação do Gateway Server.
 
 - [Acessar o documento com os arquivos](https://docs.google.com/document/d/1Xv7Ty3lvC3-qNTQt25EnL8IpG_NvVQZun_OtiMyuOXU/edit?usp=sharing)
-- [Arquivos de imagem]()
+- [Arquivos de imagem](https://github.com/Maahrcy/Grupo5.923.Redes/blob/main/arquivos-img.md)
 
 ## Samba
 Implementação do Samba
