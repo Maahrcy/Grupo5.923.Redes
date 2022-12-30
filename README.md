@@ -52,5 +52,4 @@ Implementação do Gateway Server.
 ## Samba
 Implementação do Samba
 
-- []()
-- []()
+- [Passo a Passo](https://github.com/Maahrcy/Grupo5.923.Redes/blob/main/Passo_a_passo.md)
