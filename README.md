@@ -36,9 +36,9 @@ Repositório referente ao projeto de Infraestrutura de Redes do 4° bimestre.
 ## Tabelas
 | DESCRIÇÃO  |  IP  |  hostname  |  FQDN  |  aliase  |
 | ------------------- | ------------------- | ------------------- | ------------------- | ------------------- |
-|  GW |  192.168.23.70/28 |   |  gw.grupo5.turma923.ifalara.local |  gw |
-|  SAMBA |  192.168.23.71/28 |   |  smb.grupo5.turma923.ifalara.local	|  smb |
-|  NS1 |  192.168.23.72/28 |   |  ns1.grupo5.turma923.ifalara.local	|  ns1 |
+|  GW |  192.168.23.72/28 |   |  gw.grupo5.turma923.ifalara.local |  gw |
+|  SAMBA |  192.168.23.70/28 |   |  smb.grupo5.turma923.ifalara.local	|  smb |
+|  NS1 |  192.168.23.71/28 |   |  ns1.grupo5.turma923.ifalara.local	|  ns1 |
 |  NS2 |  192.168.23.73/28 |   |  ns2.grupo5.turma923.ifalara.local	|  ns2 |
 |  WEB |  192.168.23.74/28 |   |  www.grupo5.turma923.ifalara.local	|  www |
 |  BD |  192.168.23.75/28 |   |  bd.grupo5.turma923.ifalara.local	|  bd |
