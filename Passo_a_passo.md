@@ -79,12 +79,12 @@ $ sudo netplan apply
 ```bash
 $ ifconfig -a
 ```
-<img src="/Figuras/Samba/1.2.png" title="ifconfig -a" width="550" /> 
+<img src="/samba/samba8.png" title="ifconfig -a" width="550" /> 
 
 ```bash
 $ ping 10.9.23.1
 ```
-<img src="/Figuras/Samba/1.3.png" title="ping" width="550" /> 
+<img src="/samba/samba10.png" title="ping" width="550" /> 
 
 ### 3. instalar o servidor samba na MV samba-srv
 
