@@ -91,7 +91,7 @@ $ ping 10.9.23.1
 ```bash
 $ sudo apt update
 ```
-<img src="/samba/samba9.png" title="sudo apt" width="1000" />
+<img src="/samba/samba9.png" title="sudo apt" width="600" />
 
 ```bash
 $ sudo apt install samba
