@@ -26,7 +26,7 @@ Tabela 1: Exemplo de nomes dos servidores
 ## Passo-a-passo:
 
 ```
-Tabela 2: Definições da rede interna da turma 924
+Tabela 2: Definições da rede interna da turma 923
 -----------------------------------------------
 |  DESCRICAO  |  IP / ens160  |  IP / ens192  |
 -----------------------------------------------
@@ -44,7 +44,7 @@ Exemplo: $ ssh usuário@ipremoto
 
 > Iremos dar o SSH para o ip reservado para o Samba
 ```bash
-$ ssh administrador@10.9.23.117
+$ ssh administrador@10.9.23.114
 ```
 <img src="/samba/samba1.png" title="ssh" width="550" /> 
 
