@@ -46,7 +46,7 @@ Exemplo: $ ssh usuário@ipremoto
 ```bash
 $ ssh administrador@10.9.24.117
 ```
-<img src="/Samba/Samba1.png" title="ssh" width="550" /> 
+<img src="/samba/samba1.png" title="ssh" width="550" /> 
 
 > Se o SSH não funcionar, pode ser que esteja faltando alguma conexão ser feita, acesse o [Repositório](https://github.com/Josival/grupo-6_Samba_gateway-PRIR-SRED/blob/main/Instalacao/SSH.md) que poderá ajudar a resolver os possiveis problemas
 
