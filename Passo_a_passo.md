@@ -110,24 +110,24 @@ samba: /usr/sbin/samba /usr/lib/x86_64-linux-gnu/samba /etc/samba /usr/share/sam
 $ sudo systemctl status smbd
 ● smbd.service - Samba SMB Daemon
      Loaded: loaded (/lib/systemd/system/smbd.service; enabled; vendor preset: >
-     Active: active (running) since Wed 2022-12-07 17:03:10 UTC; 2 weeks 6 days>
+     Active: active (running) since Tue 2022-12-27 18:01:51 UTC; 52min ago>
        Docs: man:smbd(8)
              man:samba(7)
              man:smb.conf(5)
-   Main PID: 45360 (smbd)
+   Main PID: 3369 (smbd)
      Status: "smbd: ready to serve connections..."
       Tasks: 4 (limit: 462)
-     Memory: 11.4M
+     Memory: 12.6M
      CGroup: /system.slice/smbd.service
-             ├─45360 /usr/sbin/smbd --foreground --no-process-group
-             ├─45362 /usr/sbin/smbd --foreground --no-process-group
-             ├─45363 /usr/sbin/smbd --foreground --no-process-group
-             └─45364 /usr/sbin/smbd --foreground --no-process-group
+             ├─3369 /usr/sbin/smbd --foreground --no-process-group
+             ├─3371 /usr/sbin/smbd --foreground --no-process-group
+             ├─3372 /usr/sbin/smbd --foreground --no-process-group
+             └─3373 /usr/sbin/smbd --foreground --no-process-group
 
-Dec 07 17:03:08 smb.grupo5.turma923.ifalara.local systemd[1]: smbd.service: Suc>
-Dec 07 17:03:08 smb.grupo5.turma923.ifalara.local systemd[1]: Stopped Samba SMB>
-Dec 07 17:03:08 smb.grupo5.turma923.ifalara.local systemd[1]: Starting Samba SM>
-Dec 07 17:03:10 smb.grupo5.turma923.ifalara.local systemd[1]: Started Samba SMB
+Dec 27 18:01:49 smb.grupo5.turma923.ifalara.local systemd[1]: smbd.service: Suc>
+Dec 27 18:01:49 smb.grupo5.turma923.ifalara.local systemd[1]: Stopped Samba SMB>
+Dec 27 18:01:49 smb.grupo5.turma923.ifalara.local systemd[1]: Starting Samba SM>
+Dec 27 18:01:51 smb.grupo5.turma923.ifalara.local systemd[1]: Started Samba SMB
 ```
 <img src="/samba/samba11.png" title="systemctl" width="600" />
 
@@ -136,7 +136,7 @@ $ netstat -an | grep LISTEN
 tcp        0      0 0.0.0.0:445             0.0.0.0:*               LISTEN     
 tcp        0      0 0.0.0.0:139             0.0.0.0:*               LISTEN   
 ```
-<img src="/Figuras/Samba/1.8.png" title="netstat" width="550" />
+<img src="/samba/samba12.png" title="netstat" width="550" />
 
 ### 5. Faça o backup do arquivo de configuração do samba e cria um arquivo novo somente com os comandos necessários.
     
@@ -153,7 +153,7 @@ $ ls -la
 -rw-r--r--  1 root root 8942 Mar 22 20:55 smb.conf
 -rw-r--r--  1 root root 8942 Mar 23 01:42 smb.conf.backup
 ```
-<img src="/Figuras/Samba/1.9..png" title="ls -la" width="550" />
+<img src="/samba/samba13.png" title="ls -la" width="550" />
 
 > Comando para remover comentários desnecessários do arquivo:
 
@@ -197,7 +197,7 @@ $ sudo nano /etc/samba/smb.conf
    guest ok = no
 ```
 > O arquivo ficará dessa forma:
-<img src="/Figuras/Samba/1.10.png" title="arquivo no sudo nano" width="800" /> 
+<img src="/samba/samba14.png" title="arquivo no sudo nano" width="800" /> 
 
   
  ### 6. Edite o arquivo de configuração /etc/samba/smb.conf
@@ -264,7 +264,7 @@ $ sudo nano /etc/samba/smb.conf
    force directory mode = 0777
 ```
 > O arquivo ficará dessa forma:
-<img src="/Figuras/Samba/1.11.png" title="arquivo no sudo nano" width="1000" /> 
+<img src="/samba/samba15.png" title="arquivo no sudo nano" width="1000" /> 
 
     * Renicie o serviço smbd
     
@@ -291,7 +291,7 @@ $ sudo systemctl restart smbd
    #force create mode = 0777
    #force directory mode = 0777
 ```
-<img src="/Figuras/Samba/1.12.png" title="config public" width="1000" /> 
+<img src="/samba/samba16.png" title="config public" width="1000" /> 
 
 
     * Crie um usuário do S.O para que possa utilizar o compartilhamento samba:
@@ -317,7 +317,7 @@ Enter the new value, or press ENTER for the default
 	Other []: 
 Is the information correct? [Y/n] y
 ```
-<img src="/Figuras/Samba/1.13.png" title="adduser" width="550" /> 
+<img src="/samba/samba17.png" title="adduser" width="550" /> 
 
     * É necessário vincular o usuário do S.O. ao Serviço Samba. Repita a senha de aluno ou crie uma senha nova somente para acessar o compartilhamento de arquivo. Neste caso repetiremos a senha do usuário aluno
     
@@ -328,7 +328,7 @@ Retype new SMB password:
 Added user aluno.
 ```
 
-<img src="/Figuras/Samba/1.14.png" title="sudo user mod" width="550" /> 
+<img src="/samba/samba17.png" title="sudo user mod" width="550" /> 
 
 ```bash
 $ sudo usermod -aG sambashare aluno
