@@ -104,7 +104,7 @@ $ sudo apt install samba
 $ whereis samba
 samba: /usr/sbin/samba /usr/lib/x86_64-linux-gnu/samba /etc/samba /usr/share/samba /usr/share/man/man8/samba.8.gz /usr/share/man/man7/samba.7.gz
 ```
-<img src="/Figuras/Samba/1.6.png" title="whereis" width="550" />
+<img src="/samba/samba11.png" title="whereis" width="550" />
 
 ```bash
 $ sudo systemctl status smbd
@@ -129,7 +129,7 @@ Dec 07 17:03:08 smb.grupo5.turma923.ifalara.local systemd[1]: Stopped Samba SMB>
 Dec 07 17:03:08 smb.grupo5.turma923.ifalara.local systemd[1]: Starting Samba SM>
 Dec 07 17:03:10 smb.grupo5.turma923.ifalara.local systemd[1]: Started Samba SMB
 ```
-<img src="/Figuras/Samba/1.7.png" title="systemctl" width="1000" />
+<img src="/samba/samba11.png" title="systemctl" width="600" />
 
 ```bash
 $ netstat -an | grep LISTEN
