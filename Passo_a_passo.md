@@ -16,10 +16,10 @@ Tabela 1: Exemplo de nomes dos servidores
 ---------------------------------------------------------
 |    Nome da VM     |                NOME               |
 ---------------------------------------------------------
-| Gateway (gw)      | gw.grupo6.turma924.ifalara.local	|
-| Samba (smb)       | smb.grupo6.turma924.ifalara.local	|
-| NameServer1 (ns1) | ns1.grupo6.turma924.ifalara.local	|
-| NameServer2 (ns2) | ns2.grupo6.turma924.ifalara.local	|
+| Gateway (gw)      | gw.grupo6.turma923.ifalara.local	|
+| Samba (smb)       | smb.grupo6.turma923.ifalara.local	|
+| NameServer1 (ns1) | ns1.grupo6.turma923.ifalara.local	|
+| NameServer2 (ns2) | ns2.grupo6.turma923.ifalara.local	|
 ---------------------------------------------------------
 ```
 
@@ -30,12 +30,12 @@ Tabela 2: Definições da rede interna da turma 924
 -----------------------------------------------
 |  DESCRICAO  |  IP / ens160  |  IP / ens192  |
 -----------------------------------------------
-| rede        | 10.9.24.0     | 192.168.24.80 |
+| rede        | 10.9.23.0     | 192.168.24.80 |
 | máscara     | 255.255.255.0 | 255.255.255.0 |
-| Gateway     | 10.9.24.108   | 192.168.24.89 |
-| Samba       | 10.9.24.117   | 192.168.24.90 |
-| NameServer1 | 10.9.24.121   | 192.168.24.91 |
-| NameServer2 | 10.9.24.231   | 192.168.24.92 |
+| Gateway     | 10.9.23.108   | 192.168.24.89 |
+| Samba       | 10.9.23.117   | 192.168.24.90 |
+| NameServer1 | 10.9.23.121   | 192.168.24.91 |
+| NameServer2 | 10.9.23.231   | 192.168.24.92 |
 -----------------------------------------------
 ```
 ### 1. Na máquina Host faça login via ssh (Use Putty no Windows ou o Terminal no Linux)
@@ -44,7 +44,7 @@ Exemplo: $ ssh usuário@ipremoto
 
 > Iremos dar o SSH para o ip reservado para o Samba
 ```bash
-$ ssh administrador@10.9.24.117
+$ ssh administrador@10.9.23.117
 ```
 <img src="/samba/samba1.png" title="ssh" width="550" /> 
 
@@ -62,14 +62,14 @@ network:
   ethernets:
     ens160:
       dhcp4: false
-      addresses: [10.9.24.117/24]
-      gateway4: 10.9.24.108
+      addresses: [10.9.23.117/24]
+      gateway4: 10.9.23.108
       nameservers:
          addresses:
            - 10.9.24.1
 ```
 > O arquivo ficará dessa forma (Na parte de baixo do arquivo terá o ip para a interface de rede ens192, que foi designado previamente para o nosso grupo) e servirá como rede interna):
-<img src="/Figuras/Samba/1.1.png" title="arquivo no sudo nano" width="550" /> 
+<img src="/samba/samba2.png" title="arquivo no sudo nano" width="550" /> 
 
 > Para salvar/aplicar as alterações feitas no arquivo, pelo sudo nano, precisamos dar este comando:
 ```bash
@@ -82,7 +82,7 @@ $ ifconfig -a
 <img src="/Figuras/Samba/1.2.png" title="ifconfig -a" width="550" /> 
 
 ```bash
-$ ping 10.9.24.1
+$ ping 10.9.23.1
 ```
 <img src="/Figuras/Samba/1.3.png" title="ping" width="550" /> 
 
@@ -124,10 +124,10 @@ $ sudo systemctl status smbd
              ├─45363 /usr/sbin/smbd --foreground --no-process-group
              └─45364 /usr/sbin/smbd --foreground --no-process-group
 
-Dec 07 17:03:08 smb.grupo6.turma924.ifalara.local systemd[1]: smbd.service: Suc>
-Dec 07 17:03:08 smb.grupo6.turma924.ifalara.local systemd[1]: Stopped Samba SMB>
-Dec 07 17:03:08 smb.grupo6.turma924.ifalara.local systemd[1]: Starting Samba SM>
-Dec 07 17:03:10 smb.grupo6.turma924.ifalara.local systemd[1]: Started Samba SMB
+Dec 07 17:03:08 smb.grupo5.turma923.ifalara.local systemd[1]: smbd.service: Suc>
+Dec 07 17:03:08 smb.grupo5.turma923.ifalara.local systemd[1]: Stopped Samba SMB>
+Dec 07 17:03:08 smb.grupo5.turma923.ifalara.local systemd[1]: Starting Samba SM>
+Dec 07 17:03:10 smb.grupo5.turma923.ifalara.local systemd[1]: Started Samba SMB
 ```
 <img src="/Figuras/Samba/1.7.png" title="systemctl" width="1000" />
 
