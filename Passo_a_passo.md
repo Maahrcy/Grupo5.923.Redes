@@ -91,12 +91,12 @@ $ ping 10.9.23.1
 ```bash
 $ sudo apt update
 ```
-<img src="/Figuras/Samba/1.5.1..png" title="sudo apt" width="1000" />
+<img src="/samba/samba9.png" title="sudo apt" width="1000" />
 
 ```bash
 $ sudo apt install samba
 ```
-<img src="/Figuras/Samba/1.5.2..png" title="sudo apt" width="600" />
+<img src="/samba/samba9.png" title="sudo apt" width="600" />
   
 ### 4. Verfificar se o samba está rodando
 
