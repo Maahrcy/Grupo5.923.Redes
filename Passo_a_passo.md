@@ -197,7 +197,7 @@ $ sudo nano /etc/samba/smb.conf
    guest ok = no
 ```
 > O arquivo ficará dessa forma:
-<img src="/samba/samba14.png" title="arquivo no sudo nano" width="800" /> 
+<img src="/samba/samba14.png" title="arquivo no sudo nano" width="600" /> 
 
   
  ### 6. Edite o arquivo de configuração /etc/samba/smb.conf
