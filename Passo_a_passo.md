@@ -264,7 +264,7 @@ $ sudo nano /etc/samba/smb.conf
    force directory mode = 0777
 ```
 > O arquivo ficará dessa forma:
-<img src="/samba/samba15.png" title="arquivo no sudo nano" width="1000" /> 
+<img src="/samba/samba15.png" title="arquivo no sudo nano" width="600" /> 
 
     * Renicie o serviço smbd
     
@@ -291,7 +291,7 @@ $ sudo systemctl restart smbd
    #force create mode = 0777
    #force directory mode = 0777
 ```
-<img src="/samba/samba16.png" title="config public" width="1000" /> 
+<img src="/samba/samba16.png" title="config public" width="600" /> 
 
 
     * Crie um usuário do S.O para que possa utilizar o compartilhamento samba:
